@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en" Name="WolframCortanaCommands_en">
+    <AppName>Wolfram Alpha</AppName>
+    <Example>How many M&amp;M's fit in a Boeing 747?</Example>
+    <Command Name="SendQueryToWolframAlpha">
+      <Example>How many M&amp;M's fit in a Boeing 747?</Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Ask {builtin:AppName} {query}</ListenFor>
+      <ListenFor RequireAppName="BeforePhrase">{query}</ListenFor>
+      <Feedback>Here we go</Feedback>
+      <Navigate />
+    </Command>
+    <PhraseTopic Label="query" Scenario="Search" />
+  </CommandSet>
+  <CommandSet xml:lang="de" Name="WolframCortanaCommands_de">
+    <AppName>Wolfram Alpha</AppName>
+    <Example>How many M&amp;M's fit in a Boeing 747?</Example>
+    <Command Name="SendQueryToWolframAlpha">
+      <Example>How many M&amp;M's fit in a Boeing 747?</Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Frage {builtin:AppName} {query}</ListenFor>
+      <ListenFor RequireAppName="BeforePhrase">{query}</ListenFor>
+      <Feedback>Los geht's</Feedback>
+      <Navigate />
+    </Command>
+    <PhraseTopic Label="query" Scenario="Search" />
+  </CommandSet>
+</VoiceCommands>
